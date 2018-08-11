@@ -6,7 +6,6 @@ module.exports = {
   devtool: 'eval',
   mode: process.env.NODE_ENV,
   entry: [
-    'babel-polyfill',
     path.resolve(__dirname, 'src', 'App.jsx'),
   ],
   output: {
@@ -16,7 +15,6 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx|mjs)$/,
-        exclude: /node_modules\/(?!(genero-ui|emoji-mart)\/).*/,
         loader: 'babel-loader',
         options: {
           cacheDirectory: true,
