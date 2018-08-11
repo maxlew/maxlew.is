@@ -57,7 +57,7 @@ class App extends Component {
         }
       }
     });
-    space.play().bindMouse();
+    space.play().bindMouse().bindTouch();
     setTimeout(() => {
       setInterval(this.moveText, 2000);
     }, 0);
