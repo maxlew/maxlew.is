@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { CanvasSpace, Create, Circle, form } from 'pts';
+import { CanvasSpace, Create, Circle } from 'pts';
 
 function randomInt(min, max)
 {

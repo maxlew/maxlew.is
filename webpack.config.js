@@ -3,7 +3,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  devtool: 'eval',
+  devtool: 'none',
   mode: process.env.NODE_ENV,
   entry: [
     path.resolve(__dirname, 'src', 'index.js'),
@@ -14,8 +14,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx|mjs)$/,
+        test: /\.(js|jsx)$/,
         loader: 'babel-loader',
+        exclude: /(node_modules)/,
         options: {
           cacheDirectory: true,
           compact: true,
