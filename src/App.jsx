@@ -66,12 +66,12 @@ class App extends Component {
   moveText() {
     this.setState({
       header: {
-        x: randomInt(20, window.innerWidth * 0.8),
-        y: randomInt(20, window.innerHeight * 0.8),
+        x: randomInt(20, window.innerWidth - 150),
+        y: randomInt(20, window.innerHeight - 36),
       },
       text: {
-        x: randomInt(20, window.innerWidth * 0.8),
-        y: randomInt(20, window.innerHeight * 0.8),
+        x: randomInt(20, window.innerWidth - 250),
+        y: randomInt(20, window.innerHeight - 36),
       }
     })
   }
