@@ -6,7 +6,7 @@ module.exports = {
   devtool: 'eval',
   mode: process.env.NODE_ENV,
   entry: [
-    path.resolve(__dirname, 'src', 'App.jsx'),
+    path.resolve(__dirname, 'src', 'index.js'),
   ],
   output: {
     path: path.resolve(__dirname, 'build'),
